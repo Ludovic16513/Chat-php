@@ -1,7 +1,10 @@
 body{
     margin: 0;
     padding: 0;
-    background: #1e1e1e;
+    background-image: url("others/main_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: white;
     display: flex;
     flex-direction: column;
@@ -31,44 +34,76 @@ h1{
 .avatar{
     width: 6.5%;
     background: #6495ed;
-    border-top-left-radius: 20px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .name{
     width: 24.5%;
     background: #6495ed;
-    border-top-right-radius: 20px;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
 }
 .pseudo{
     font-size: 15pt;
+    font-weight: bold;
 }
+
+.etat{
+    color: #78ff00;
+    border: 1px solid #78ff00;
+    background: rgb(58, 58, 58);
+    margin-left: 5px;
+    font-weight: bold;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 10pt;
+    cursor: pointer;
+}
+
 .photo{
-    height: 84%;
-    width: 92%;
+    height: 98%;
+    width: 96%;
+    background: rgba(43, 57, 158, 0.77);
+    background-image: url("avatars/peach.png");
+    background-size: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: -25px;
+    background-position-y: -12px;
 }
 .messages{
     width: 24.5%;
-    background: yellowgreen;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    background: #6495ed;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 20pt;
+    font-weight: bold;
+    overflow: hidden;
+    cursor: pointer;
+}
+.fa-envelope-open-text{
+    font-size: 35pt;
+    margin-right: 5%;
 }
 .settings{
     width: 9.5%;
-    background: yellowgreen;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    background: #6495ed;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 30pt;
+    cursor: pointer;
+}
+.settings:hover, .messages:hover{
+    background: #99b3ff;
 }
 .fa1{
     margin-right: 10px;
@@ -77,7 +112,7 @@ h1{
 }
 .fa2{
     margin-left: 10px;
-    color: rgba(154, 205, 50, 0.51);
+    color: rgba(100, 149, 237, 0.6);
     font-size: 30px;
 }
 
@@ -90,7 +125,6 @@ h1{
     justify-content: space-between;
 }
 .content_case{
-    background: grey;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,7 +134,53 @@ h1{
 }
 .list{
     width: 470px;
+    border: 3px solid cornflowerblue;
+    background: rgba(47, 52, 62, 0.67);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 .chat{
     width: 880px;
+    border: 3px solid cornflowerblue;
+    background: rgba(47, 52, 62, 0.67);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.send_bar{
+    border: 3px solid cornflowerblue;
+    background: #ffffff;
+    width: 880px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.all_messages{
+    width: 880px;
+}
+.send{
+    height: 35px;
+}
+.input_txt{
+    width: 800px;
+    padding-left: 10px;
+    font-size: 16pt;
+}
+.input_sbmt{
+    width: 75px;
+    height: 41px;
+    background: #4d6fb3;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12pt;
+}
+.friends_list{
+    background: cornflowerblue;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    height: 70px;
 }

@@ -17,20 +17,26 @@
     </div>
     <div class="title_case name">
         <span class="pseudo">LudovicCoffey</span>
-        <span class="statut">Statut : Disponible</span>
-        <span class="description">Bonjour, je suis le chef de projet</span>
+        <span class="statut">Statut : <span class="etat">Disponible</span></span>
+        <span class="description">Je suis une base de données !</span> <!-- 15 characters max -->
     </div>
     <h1 class="title_case"><i class="fas fa-coffee fa1"></i>LUDO CHAT<i class="fas fa-coffee fa2"></i></h1>
-    <div class="title_case messages">Messages</div>
-    <div class="title_case settings">Sets</div>
+    <div class="title_case messages"><i class="fas fa-envelope-open-text"></i>Messages</div>
+    <div class="title_case settings"><i class="fas fa-cogs"></i></div>
 
 </div>
 
 <div id="content">
-    <div class="content_case list"></div>
+    <div class="content_case list">
+        <p class="friends_list">Pseudo</p>
+    </div>
+
     <div class="content_case chat">
         <div class="all_messages"></div>
-        <div class="send_bar"></div>
+        <form class="send_bar" method="post">
+            <input class="send input_txt" type="text" name="text_send">
+            <input class="send input_sbmt" type="submit" value="Envoyer">
+        </form>
     </div>
 </div>
 
