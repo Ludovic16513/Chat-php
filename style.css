@@ -5,6 +5,7 @@ body{
     color: white;
     display: flex;
     flex-direction: column;
+    font-family: 'Nunito', sans-serif;
 }
 /* 1st BAR FLEX -- contain -- (Avatar, Pseudo, Title, Messages and Settings cases) */
 #title{
@@ -12,31 +13,74 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid rgba(145, 0, 33, 0.41);
 }
 h1{
     margin: 0;
     width: 29.5%;
-}
-.title_case{
-    background: grey;
-    height: 80px;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 3px;
+    font-size: 30pt;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.title_case{
+    height: 80px;
+    margin-top: 10px;
+}
 .avatar{
-    width: 9.5%;
+    width: 6.5%;
+    background: #6495ed;
+    border-top-left-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 .name{
     width: 24.5%;
+    background: #6495ed;
+    border-top-right-radius: 20px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pseudo{
+    font-size: 15pt;
+}
+.photo{
+    height: 84%;
+    width: 92%;
 }
 .messages{
     width: 24.5%;
+    background: yellowgreen;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .settings{
     width: 9.5%;
+    background: yellowgreen;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.fa1{
+    margin-right: 10px;
+    color: rgba(100, 149, 237, 0.6);
+    font-size: 30px;
+}
+.fa2{
+    margin-left: 10px;
+    color: rgba(154, 205, 50, 0.51);
+    font-size: 30px;
+}
+
 /* 2nd BAR FLEX -- contain -- (List of all friends, the general discussion and the send bar) */
 #content{
     margin-top: 10px;
@@ -50,7 +94,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 560px;
+    height: 550px;
     margin-left: 0.25%;
     margin-right: 0.25%;
 }
