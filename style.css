@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #1e1e1e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+/* 1st BAR FLEX -- contain -- (Avatar, Pseudo, Title, Messages and Settings cases) */
+#title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgba(145, 0, 33, 0.41);
+}
+h1{
+    margin: 0;
+    width: 29.5%;
+}
+.title_case{
+    background: grey;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avatar{
+    width: 9.5%;
+}
+.name{
+    width: 24.5%;
+}
+.messages{
+    width: 24.5%;
+}
+.settings{
+    width: 9.5%;
+}
+/* 2nd BAR FLEX -- contain -- (List of all friends, the general discussion and the send bar) */
+#content{
+    margin-top: 10px;
+    border: 1px solid rgba(0, 37, 145, 0.41);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content_case{
+    background: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 560px;
+    margin-left: 0.25%;
+    margin-right: 0.25%;
+}
+.list{
+    width: 470px;
+}
+.chat{
+    width: 880px;
+}
