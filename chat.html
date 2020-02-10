@@ -12,23 +12,33 @@
 </head>
 <body>
 
+<!-- First part _ the header (pseudo, title, settings, ...) -->
 <div id="title">
+    <!-- Your own interface -->
     <div class="title_case avatar">
-        <div class="photo"><img height="270%" src="avatars/peach.png" alt=""></div>
+        <div class="N/A photo"><img height="270%" src="avatars/peach.png" alt=""></div>
     </div>
+
     <div class="title_case name">
         <span class="pseudo">LudovicCoffey</span>
-        <span class="statut">Statut : <span class="etat">Disponible</span></span>
+        <span class="statut">Statut : <span class="etat N/A">Disponible</span></span>
         <span class="description">Je suis une base de données !</span> <!-- 15 characters max -->
     </div>
+    <!-- Title of the chat -->
     <h1 class="title_case"><i class="fas fa-coffee fa1"></i>LUDO CHAT<i class="fas fa-coffee fa2"></i></h1>
-    <div class="title_case messages"><i class="fas fa-envelope-open-text"></i>Messages</div>
-    <div class="title_case settings"><i class="fas fa-cogs"></i></div>
+
+    <!-- Others options (not available yet) -->
+    <div class="N/A title_case messages"><i class="fas fa-envelope-open-text"></i>Messages</div>
+    <div class="N/A title_case settings"><i class="fas fa-cogs"></i></div>
 
 </div>
 
+<!-- Second part _ the body (connected friends, all messages, the chat function, ... ) -->
 <div id="content">
+
     <div class="content_case list">
+
+        <!-- The list of all of the participant of the chat. Connected or not. Format specified to each person. -->
         <div class="friends_list">
             <span class="connected_avatar">Avatar</span>
             <div class="connected_id">
@@ -37,20 +47,27 @@
                 <div>Statut : <span class="etat">Disponible</span></div>
             </div>
         </div>
+
     </div>
 
     <div class="content_case chat">
         <div class="all_messages">
+
+            <!-- This part is the Message send bloc. All of the received or sent messages on the main chat will be like that. -->
             <div class="message_sent">
                 <p class="pseudo_sent">PSEUDO</p>
                 <p class="message_corpus">Ce texte sera remplacé par un message !</p>
                 <p class="date_sent">Envoyé le 10/02/2020</p>
             </div>
+
         </div>
+
+        <!-- The Send Message function -->
         <form class="send_bar" method="post" action="chat.html">
             <input class="send input_txt" type="text" name="text_send">
             <input class="send input_sbmt" type="submit" value="Envoyer">
         </form>
+
     </div>
 </div>
 
