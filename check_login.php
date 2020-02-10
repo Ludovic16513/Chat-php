@@ -23,7 +23,7 @@ while ($row = $result->fetch_assoc()) {
             $_SESSION['password'] = $_POST['password'];
 
             // on redirige notre visiteur vers une page de notre section membre
-            header('location: index.html');
+            header('location: chat.html');
         } else {
             // Le visiteur n'a pas été reconnu comme étant membre de notre site. On utilise alors un petit javascript lui signalant ce fait
             echo '<body onLoad="alert(\'Membre non reconnu...\')">';

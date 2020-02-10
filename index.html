@@ -3,43 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <title>LudoChat</title>
+    <title>Ludo-Chat - Login</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d49bbded3d.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="accueil">
+<h1 class="main_title">Ludo Chat</h1>
 
-<div id="title">
-    <div class="title_case avatar">
-        <div class="photo"></div>
-    </div>
-    <div class="title_case name">
-        <span class="pseudo">LudovicCoffey</span>
-        <span class="statut">Statut : <span class="etat">Disponible</span></span>
-        <span class="description">Je suis une base de données !</span> <!-- 15 characters max -->
-    </div>
-    <h1 class="title_case"><i class="fas fa-coffee fa1"></i>LUDO CHAT<i class="fas fa-coffee fa2"></i></h1>
-    <div class="title_case messages"><i class="fas fa-envelope-open-text"></i>Messages</div>
-    <div class="title_case settings"><i class="fas fa-cogs"></i></div>
-
-</div>
-
-<div id="content">
-    <div class="content_case list">
-        <p class="friends_list">Pseudo</p>
-    </div>
-
-    <div class="content_case chat">
-        <div class="all_messages"></div>
-        <form class="send_bar" method="post">
-            <input class="send input_txt" type="text" name="text_send">
-            <input class="send input_sbmt" type="submit" value="Envoyer">
-        </form>
-    </div>
-</div>
-
+<form method="post" action="chat.html">
+    <input class="main" type="text" name="pseudo">
+    <input class="main" type="password" name="password">
+    <input class="main" type="submit" value="Se connecter">
+</form>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="script.js"></script>
