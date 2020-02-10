@@ -176,7 +176,12 @@ h1{
     flex-direction: row;
 }
 .all_messages{
-    width: 880px;
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .send{
     height: 35px;
@@ -194,6 +199,10 @@ h1{
     color: white;
     font-weight: bold;
     font-size: 12pt;
+    cursor: pointer;
+}
+.input_sbmt:hover {
+    background: #99b3ff;
 }
 .friends_list{
     background: cornflowerblue;
@@ -215,7 +224,7 @@ h1{
     align-items: baseline;
 }
 .connected_avatar{
-    border: 1px solid red;
+    border: 1px solid #4d6fb3;
     height: 98%;
     width: 22%;
     background: rgba(43, 57, 158, 0.77);
@@ -234,6 +243,7 @@ h1{
     padding: 1%;
     margin-top: 2%;
     border-radius: 20px;
+    width: 95%;
 }
 .pseudo_sent{
     font-weight: bold;
