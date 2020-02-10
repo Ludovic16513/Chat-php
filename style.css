@@ -228,3 +228,19 @@ h1{
 .description{
     color: #e2e2e2;
 }
+.message_sent{
+    color: black;
+    background: #a9bdcc;
+    padding: 1%;
+    margin-top: 2%;
+    border-radius: 20px;
+}
+.pseudo_sent{
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 16pt;
+}
+.date_sent{
+    color: #3a3a3a;
+    font-size: 10pt;
+}
