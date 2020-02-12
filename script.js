@@ -18,7 +18,7 @@ function stateAppareance(x) {
         stateAll.style.color="#ffc42d";
         stateAll.style.border="1px solid #ffc42d";
     }
-    else if (stateAll.innerHTML === "Absent"){
+    else if (stateAll.innerHTML === "Indisponible"){
         stateAll.style.color="#ff3520";
         stateAll.style.border="1px solid #ff3520";
     }
